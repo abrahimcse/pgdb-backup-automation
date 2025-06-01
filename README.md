@@ -27,6 +27,19 @@ cd /crystal/
 vim pgdb_backup.py
 
 ```
+> Please modify the `pgdb_backup.py` file according to your requirements.
+```
+BASE_BACKUP_DIR = "/var/backups/pgdb"   # Base directory for backups
+LOG_FILE = "/var/log/pgdb_backup.log"
+RETENTION_DAYS = 7                   # Number of days to keep backups
+
+DB_USER = "postgres"                 # PostgreSQL username
+DB_PASSWORD = "postgrespassword"     # PostgreSQL password
+DB_HOST = "localhost"                # Database host
+
+TELEGRAM_BOT_TOKEN = "bot_token"     # Get this from @BotFather after creating a new bot
+TELEGRAM_CHAT_ID = "chat_id"         # Your user or group chat ID
+```
 
 3. Make script executable:
 
